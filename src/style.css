@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Parkinsans:wght@300..800&display=swap');
+*{
+  padding :0;
+  margin :0;
+  box-sizing: border-box;
+  font-family: "Parkinsans" , sans-serif;
+}
+:root{
+  --primary-color : #3182CE;
+  --success : #00ff77;
+  --warning : #D69E2E;
+  --error : #E53E3E;
+  --neutral : #005253;
+} #app{
+  position :relative;
+  width :100vw;
+  height :100vh;
+}
+#display {
+  position :absolute;
+  right :0;
+  bottom :0;
+  padding : 7px 30px;
+  margin : 0px  10px;
+}.button {
+  background-color: var(--primary-color);
+  padding : 5px 10px;
+  outline : none;
+  border : none;
+  margin : 10px;
+}
+.element { 
+  background-color : var(--neutral);
+  padding : 10px;
+  width : 30vw;
+  position :relative;
+    margin: 10px;
+}
+.element > span {
+  width :calc(100% - 8px);
+  position: absolute;
+  bottom :0;
+  right : 4px;
+  left :4px;
+  height : 5px;
+  background-color : var(--error);
+  animation : time 7s none 1;
+
+
+}
+.success {
+  color : var(--success)
+}.error {
+  color : var(--error)
+}.Warning{
+  color : var(--warning)
+}
+
+
+
+@keyframes time {
+0%{
+  width: calc(100% - 8px);
+}
+100%{
+  width : 0;
+}
+}
